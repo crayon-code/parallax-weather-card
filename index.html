@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Weather Card</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <main class="weather weather--morning">
+    <div class="weather__backdrop morning"></div>
+    <div class="weather__backdrop noon"></div>
+    <div class="weather__backdrop night"></div>
+    <div class="weather__clouds">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 126.6">
+        <path d="M512,57H312.61s54.33-20.88,99.7-17.44S444.67,0,475.67,0s36.07,28.5,36.07,28.5Z" />
+        <path d="M0,126.6H190.63s-8.4-22.6-34.2-17.27S140,104.67,104,80,74,98.67,50,99.33,4.7,110.54,0,126.6Z" />
+      </svg>
+    </div>
+    <div class="weather__parallax">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512">
+        <path
+          d="M640.32,138.67s-60.83-22.67-98.33,0-8.13,55.33-98.24,52.66-77.6,62-182.6,51.34S217,281.72,217,281.72l423-3.21Z" />
+        <path
+          d="M0,77S62.58,46,86.24,91s31.17,81,108.67,76,65.41-3.95,150.2,47,56.36,44.14-119.42,38.56S0,241.72,0,241.72Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <path d="M0,208.08s109-46.19,222.69-9c108.94,35.65,191.23,6.76,284.27,18,43.38,5.25,110.65,4.55,180.28-7.58,47.57-8.29,66,6.7,80.76,14.5V366L0,372.3V208.08Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 512">
+        <path d="M0,251.58s207.41,25,380.36,14.09C449.05,261.35,629.21,239,684.12,245,795.81,257.27,896,263,896,263V512H0Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 896 512">
+        <path d="M0,317.83s120.27-38.36,299.21,0,306,34.61,364,34.61,38,58.63,20,62.81S0,392.3,0,392.3Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512">
+        <path d="M490.67,339C256.72,426,0,342,0,342V512H1024V310c-80.82-14.19-291-61.08-533.33,29Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1152 512">
+        <path d="M1152,376.73c-5.49-2.17-100.35-38.34-183.12,23.06C888.58,459.33,734.52,512.15,640,512l29.54,0H1152s0-91.21,0-135.24Z" />
+      </svg>
+      <div class="weather__conditions">
+        <div class="weather__condition day">
+          <div class="weather__temp">6°</div>
+          <div class="weather__icon sunny"></div>
+        </div>
+        
+        <div class="weather__condition noon">
+          <div class="weather__temp">12°</div>
+          <div class="weather__icon cloudy"></div>
+        </div>
+        
+        <div class="weather__condition night">
+          <div class="weather__temp">7°</div>
+          <div class="weather__icon showers"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="weather__indicators">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

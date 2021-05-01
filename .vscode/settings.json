@@ -1,0 +1,11 @@
+{
+  // "editor.fontSize": 24,
+  // "editor.lineHeight": 32,
+  "window.zoomLevel": 3,
+  "editor.formatOnSave": false,
+  "editor.lineNumbers":"on",
+  "editor.quickSuggestionsDelay": 2000,
+  "workbench.activityBar.visible": true,
+  "workbench.statusBar.visible": true,
+  "liveServer.settings.port": 5501,
+}
